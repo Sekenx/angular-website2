@@ -9,6 +9,7 @@ import { GenericComponent } from './generic/generic.component';
 import { ContactComponent } from './contact/contact.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { FullGalleryComponent } from './full-gallery/full-gallery.component';
 
 const appRoutes:Routes = [
   {
@@ -18,7 +19,15 @@ const appRoutes:Routes = [
   {
     path: 'gallery',
     component: GalleryComponent
-  }
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'banner',
+    component: BannerComponent
+  },
 ];
 
 @NgModule({
@@ -29,7 +38,8 @@ const appRoutes:Routes = [
     GenericComponent,
     ContactComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    FullGalleryComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
